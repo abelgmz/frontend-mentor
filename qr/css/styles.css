@@ -1,0 +1,70 @@
+/* Variables declaration */
+
+:root {
+    --color-white: #fff;
+    --color-grayish-blue: #7b879d;
+    --color-dark-blue: #1f3251;
+    --color-background: #D5E1EF;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: Outfit;
+    src: url(https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap);
+}
+
+
+/* Universal styles */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Outfit;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+
+/* Styles */
+
+body {
+    background-color: var(--color-background);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--color-white);
+    width: 320px;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: .9rem;
+    padding: 1rem;
+}
+
+.qr-image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.title {
+    color: var(--color-dark-blue);
+    font-weight: 700;
+    margin: 1rem 1.5rem;
+}
+
+.description {
+    margin: 1rem 2rem;
+    color: var(--color-grayish-blue);
+    font-weight: 400;
+}
