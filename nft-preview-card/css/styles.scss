@@ -1,0 +1,132 @@
+// Variables declaration
+$color-dark-blue-main:#0d192b;
+$color-dark-blue-card: #14253d;
+$color-dark-blue-line: #2f415b;
+$color-soft-blue: #8bacda;
+$color-cyan: #00fff7;
+$color-white: #fff;
+// Font
+@font-face {
+    font-family: 'Outfit';
+    src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    font-style: normal;
+}
+
+// Generic styles
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: Outfit;
+}
+
+%flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+// Styles
+main {
+    background-color: $color-dark-blue-main;
+    min-height: 100vh;
+    @extend %flexbox;
+    justify-content: center;
+    align-content: center;
+    .nft-card-preview {
+        background-color: $color-dark-blue-card;
+        width: 350px;
+        height: auto;
+        padding: 1.2rem;
+        border-radius: .5rem;
+        .nft-image {
+            width: 100%;
+            transition: all .3s ease;
+            position: relative;
+            .image {
+                width: 100%;
+                border-radius: .5rem;
+                display: block;
+            }
+            .overlay {
+                position: absolute;
+                @extend %flexbox;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+                transition: all .3s ease;
+                border-radius: .5rem;
+                background-color: rgba(0, 255, 247, .5);
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        .nft-description {
+            .name {
+                color: $color-white;
+                margin: 1rem 0rem;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover {
+                    color: $color-cyan;
+                }
+            }
+            .description {
+                color: $color-soft-blue;
+                font-weight: 300;
+            }
+            .price {
+                color: $color-cyan;
+                padding: 1rem 0rem;
+                @extend %flexbox;
+                justify-content: space-between;
+                font-weight: 400;
+                font-size: .8rem;
+                p {
+                    @extend %flexbox;
+                    align-items: center;
+                }
+                img {
+                    padding-right: .5rem;
+                }
+                .time-remaining {
+                    color: $color-soft-blue;
+                }
+            }
+        }
+        .nft-creator {
+            @extend %flexbox;
+            align-items: center;
+            border-top: 1px solid $color-dark-blue-line;
+            padding: 1rem 0rem;
+            .creator-image {
+                width: 10%;
+                border: 1px solid $color-white;
+                border-radius: 1rem;
+                margin-right: 1rem;
+            }
+            .creator-information {
+                color: $color-soft-blue;
+                .creator-profile {
+                    color: $color-white;
+                    text-decoration: none;
+                    margin-left: .2rem;
+                    cursor: pointer;
+                    &:hover {
+                        color: $color-cyan;
+                    }
+                }
+            }
+        }
+    }
+}

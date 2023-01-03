@@ -1,3 +1,94 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+  font-style: normal; }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
 
+html {
+  font-size: 18px;
+  font-family: Outfit; }
+
+main, main .nft-card-preview .nft-image .overlay, main .nft-card-preview .nft-description .price, main .nft-card-preview .nft-description .price p, main .nft-card-preview .nft-creator {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+main {
+  background-color: #0d192b;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center; }
+  main .nft-card-preview {
+    background-color: #14253d;
+    width: 350px;
+    height: auto;
+    padding: 1.2rem;
+    border-radius: .5rem; }
+    main .nft-card-preview .nft-image {
+      width: 100%;
+      transition: all .3s ease;
+      position: relative; }
+      main .nft-card-preview .nft-image .image {
+        width: 100%;
+        border-radius: .5rem;
+        display: block; }
+      main .nft-card-preview .nft-image .overlay {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        transition: all .3s ease;
+        border-radius: .5rem;
+        background-color: rgba(0, 255, 247, 0.5); }
+        main .nft-card-preview .nft-image .overlay:hover {
+          opacity: 1; }
+    main .nft-card-preview .nft-description .name {
+      color: #fff;
+      margin: 1rem 0rem;
+      font-weight: 600;
+      cursor: pointer; }
+      main .nft-card-preview .nft-description .name:hover {
+        color: #00fff7; }
+    main .nft-card-preview .nft-description .description {
+      color: #8bacda;
+      font-weight: 300; }
+    main .nft-card-preview .nft-description .price {
+      color: #00fff7;
+      padding: 1rem 0rem;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: .8rem; }
+      main .nft-card-preview .nft-description .price p {
+        align-items: center; }
+      main .nft-card-preview .nft-description .price img {
+        padding-right: .5rem; }
+      main .nft-card-preview .nft-description .price .time-remaining {
+        color: #8bacda; }
+    main .nft-card-preview .nft-creator {
+      align-items: center;
+      border-top: 1px solid #2f415b;
+      padding: 1rem 0rem; }
+      main .nft-card-preview .nft-creator .creator-image {
+        width: 10%;
+        border: 1px solid #fff;
+        border-radius: 1rem;
+        margin-right: 1rem; }
+      main .nft-card-preview .nft-creator .creator-information {
+        color: #8bacda; }
+        main .nft-card-preview .nft-creator .creator-information .creator-profile {
+          color: #fff;
+          text-decoration: none;
+          margin-left: .2rem;
+          cursor: pointer; }
+          main .nft-card-preview .nft-creator .creator-information .creator-profile:hover {
+            color: #00fff7; }
 
 /*# sourceMappingURL=styles.css.map */

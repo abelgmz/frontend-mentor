@@ -6,19 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <main>
-        <section class="nft-preview">
-            <h1 class="name">Equilibrium #3429</h1>
-            <p class="description"> Our Equilibrium collection promotes balance and calm.</p>
-            <p class="price">0.041 ETH<span class="time-remaining">3 days left</span></p>
-            <p class="creation-of">
-                Creation of Jules Wyvern
-            </p>
+        <section class="nft-card-preview">
+            <div class="nft-image">
+                <img src="images/image-equilibrium.jpg" alt="NFT Equilibrium" class="image">
+                <div class="overlay">
+                    <a href="#"><img src="images/icon-view.svg" alt="icon preview"></a>
+                </div>
+            </div>
+            <div class="nft-description">
+                <h1 class="name">Equilibrium #3429</h1>
+                <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+                <div class="price">
+                    <p><img src="images/icon-ethereum.svg" alt="small icon Etherum">0.041 ETH</p>
+                    <p class="time-remaining"><img src="images/icon-clock.svg" alt="small icon clock">3 days left</p>
+                </div>
 
-
+            </div>
+            <footer class="nft-creator">
+                <img src="images/image-avatar.png" alt="NFT Creator" class="creator-image">
+                <p class="creator-information">
+                    Creation of<a href="#" class="creator-profile">Jules Wyvern</a>
+                </p>
+            </footer>
         </section>
     </main>
 
