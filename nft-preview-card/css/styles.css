@@ -65,7 +65,8 @@ main {
       padding: 1rem 0rem;
       justify-content: space-between;
       font-weight: 400;
-      font-size: .8rem; }
+      font-size: .8rem;
+      border-bottom: 1px solid #2f415b; }
       main .nft-card-preview .nft-description .price p {
         align-items: center; }
       main .nft-card-preview .nft-description .price img {
@@ -74,8 +75,7 @@ main {
         color: #8bacda; }
     main .nft-card-preview .nft-creator {
       align-items: center;
-      border-top: 1px solid #2f415b;
-      padding: 1rem 0rem; }
+      margin: 1rem 0rem; }
       main .nft-card-preview .nft-creator .creator-image {
         width: 10%;
         border: 1px solid #fff;

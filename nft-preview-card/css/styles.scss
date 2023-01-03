@@ -92,6 +92,7 @@ main {
                 justify-content: space-between;
                 font-weight: 400;
                 font-size: .8rem;
+                border-bottom: 1px solid $color-dark-blue-line;
                 p {
                     @extend %flexbox;
                     align-items: center;
@@ -107,8 +108,7 @@ main {
         .nft-creator {
             @extend %flexbox;
             align-items: center;
-            border-top: 1px solid $color-dark-blue-line;
-            padding: 1rem 0rem;
+            margin: 1rem 0rem;
             .creator-image {
                 width: 10%;
                 border: 1px solid $color-white;
