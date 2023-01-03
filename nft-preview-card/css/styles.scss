@@ -91,7 +91,6 @@ main {
                 @extend %flexbox;
                 justify-content: space-between;
                 font-weight: 400;
-                font-size: .8rem;
                 border-bottom: 1px solid $color-dark-blue-line;
                 p {
                     @extend %flexbox;
