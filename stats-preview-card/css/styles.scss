@@ -1,0 +1,100 @@
+// Variables declaration
+$clr-white: #ffffff;
+$clr-transparent-white-main: #ffffffbf;
+$clr-transparent-white-paragraph: #ffffff99;
+$clr-dark-blue :#090b1a;
+$clr-desaturated-blue: #1b1938;
+$clr-soft-violet: #aa5cdb;
+// Fonts
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+}
+
+@font-face {
+    font-family: 'Lexend-Deca';
+    src: url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    font-weight: 400;
+}
+
+// General styles
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    font-size: 100%;
+    font-family: Inter;
+}
+
+%flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+%ff-Lexend-Deca {
+    font-family: 'Lexend-Deca';
+}
+
+// Styles
+main {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: $clr-dark-blue;
+    @extend %flexbox;
+    justify-content: center;
+    align-items: center;
+    .stats-preview-card {
+        @extend %flexbox;
+        max-width: 60%;
+        border-radius: 1rem;
+        .stats-content {
+            background-color: $clr-desaturated-blue;
+            width: 50%;
+            padding: 4.5rem 6rem 3rem 4.5rem;
+            border-radius: 1rem 0rem 0rem 1rem;
+            .title {
+                color: $clr-transparent-white-main;
+                font-size: 2.4em;
+                .insights {
+                    color: $clr-soft-violet;
+                }
+            }
+            .description {
+                color: $clr-transparent-white-paragraph;
+                margin: 2rem 0rem 4.5em 0rem;
+                font-size: 1.1em;
+            }
+            .stats-number {
+                @extend %flexbox;
+                justify-content: space-between;
+                .stat {
+                    .number {
+                        color: $clr-white;
+                        font-size: 1.5em;
+                        font-weight: 700;
+                    }
+                    .name {
+                        color: $clr-transparent-white-paragraph;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .image {
+            width: auto;
+            // height: auto;
+            background-color: $clr-soft-violet;
+            img {
+                width: 33.75rem;
+                border-radius: 0rem 1rem 1rem 0rem;
+                opacity: .6;
+                height: 100%;
+            }
+        }
+    }
+}
