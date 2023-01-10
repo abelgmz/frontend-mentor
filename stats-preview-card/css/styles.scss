@@ -22,7 +22,7 @@ $clr-soft-violet: #aa5cdb;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 html {
@@ -148,8 +148,9 @@ main {
 
 @media screen and (max-width: 767px) {
     html {
-        font-size: 90%;
+        font-size: 80%;
         main {
+            height: 100%;
             .stats-preview-card {
                 .stats-content {
                     .description {
@@ -163,5 +164,11 @@ main {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 50%;
     }
 }

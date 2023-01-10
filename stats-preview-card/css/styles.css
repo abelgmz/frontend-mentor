@@ -8,8 +8,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  overflow: hidden; }
+  box-sizing: border-box; }
 
 html {
   font-size: 100%;
@@ -91,10 +90,15 @@ main {
           width: 100%; } }
 @media screen and (max-width: 767px) {
   html {
-    font-size: 90%; }
-    html main .stats-preview-card .stats-content .description {
-      margin: 1rem 0rem; }
-    html main .stats-preview-card .stats-content .stats-number .stat {
-      margin: .8rem 0rem; } }
+    font-size: 80%; }
+    html main {
+      height: 100%; }
+      html main .stats-preview-card .stats-content .description {
+        margin: 1rem 0rem; }
+      html main .stats-preview-card .stats-content .stats-number .stat {
+        margin: .8rem 0rem; } }
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 50%; } }
 
 /*# sourceMappingURL=styles.css.map */
