@@ -41,7 +41,7 @@ main {
           color: #aa5cdb; }
       main .stats-preview-card .stats-content .description {
         color: #ffffff99;
-        margin: 2rem 0rem 4.5em 0rem;
+        margin: 2rem 0rem 4.5rem 0rem;
         font-size: 1.1em; }
       main .stats-preview-card .stats-content .stats-number {
         justify-content: space-between; }
@@ -53,12 +53,48 @@ main {
           color: #ffffff99;
           text-transform: uppercase; }
     main .stats-preview-card .image {
-      width: auto;
+      width: 50%;
       background-color: #aa5cdb; }
       main .stats-preview-card .image img {
-        width: 33.75rem;
+        width: 100%;
         border-radius: 0rem 1rem 1rem 0rem;
         opacity: .6;
         height: 100%; }
+
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 90%; }
+    html .stats-preview-card .stats-content {
+      padding: 2rem 4rem 2rem 2.5rem; }
+      html .stats-preview-card .stats-content .description {
+        margin: 1rem 0rem 2.5rem 0rem; } }
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 80%; } }
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 100%; }
+    html main {
+      min-height: 100vh; }
+      html main .stats-preview-card {
+        flex-direction: column-reverse; }
+        html main .stats-preview-card .stats-content {
+          width: 100%;
+          text-align: center; }
+          html main .stats-preview-card .stats-content .description {
+            line-height: 1.5em; }
+          html main .stats-preview-card .stats-content .stats-number {
+            flex-direction: column; }
+            html main .stats-preview-card .stats-content .stats-number .stat {
+              margin: 1rem 0rem; }
+        html main .stats-preview-card .image {
+          width: 100%; } }
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 90%; }
+    html main .stats-preview-card .stats-content .description {
+      margin: 1rem 0rem; }
+    html main .stats-preview-card .stats-content .stats-number .stat {
+      margin: .8rem 0rem; } }
 
 /*# sourceMappingURL=styles.css.map */

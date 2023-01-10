@@ -66,7 +66,7 @@ main {
             }
             .description {
                 color: $clr-transparent-white-paragraph;
-                margin: 2rem 0rem 4.5em 0rem;
+                margin: 2rem 0rem 4.5rem 0rem;
                 font-size: 1.1em;
             }
             .stats-number {
@@ -86,14 +86,81 @@ main {
             }
         }
         .image {
-            width: auto;
-            // height: auto;
+            width: 50%;
             background-color: $clr-soft-violet;
             img {
-                width: 33.75rem;
+                width: 100%;
                 border-radius: 0rem 1rem 1rem 0rem;
                 opacity: .6;
                 height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1600px) {
+    html {
+        font-size: 90%;
+        .stats-preview-card {
+            .stats-content {
+                padding: 2rem 4rem 2rem 2.5rem;
+                .description {
+                    margin: 1rem 0rem 2.5rem 0rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    html {
+        font-size: 100%;
+        main {
+            min-height: 100vh;
+            .stats-preview-card {
+                flex-direction: column-reverse;
+                .stats-content {
+                    width: 100%;
+                    text-align: center;
+                    .description {
+                        line-height: 1.5em;
+                    }
+                    .stats-number {
+                        flex-direction: column;
+                        .stat {
+                            margin: 1rem 0rem;
+                        }
+                    }
+                }
+                .image {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 90%;
+        main {
+            .stats-preview-card {
+                .stats-content {
+                    .description {
+                        margin: 1rem 0rem;
+                    }
+                    .stats-number {
+                        .stat {
+                            margin: .8rem 0rem;
+                        }
+                    }
+                }
             }
         }
     }
