@@ -67,10 +67,10 @@ main {
       padding: 2rem 4rem 2rem 2.5rem; }
       html .stats-preview-card .stats-content .description {
         margin: 1rem 0rem 2.5rem 0rem; } }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 80%; } }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 992px) {
   html {
     font-size: 100%; }
     html main {
@@ -88,7 +88,7 @@ main {
               margin: 1rem 0rem; }
         html main .stats-preview-card .image {
           width: 100%; } }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 80%; }
     html main {
@@ -99,6 +99,8 @@ main {
         margin: .8rem 0rem; } }
 @media screen and (max-width: 576px) {
   html {
-    font-size: 50%; } }
+    font-size: 50%; }
+    html main .stats-preview-card {
+      max-width: 80%; } }
 
 /*# sourceMappingURL=styles.css.map */

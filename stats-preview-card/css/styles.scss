@@ -112,13 +112,13 @@ main {
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
     html {
         font-size: 80%;
     }
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:992px) {
     html {
         font-size: 100%;
         main {
@@ -146,7 +146,7 @@ main {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     html {
         font-size: 80%;
         main {
@@ -170,5 +170,16 @@ main {
 @media screen and (max-width:576px) {
     html {
         font-size: 50%;
+        main {
+            .stats-preview-card {
+                max-width: 80%;
+                .image {
+                    // width: 100%;
+                    // img {
+                    //     width: 100%;
+                    // }
+                }
+            }
+        }
     }
 }
