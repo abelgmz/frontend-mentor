@@ -126,35 +126,26 @@ main {
 				flex-direction: column-reverse;
 				max-width: 50%;
 
-				// min-height: 100vh;
-				.stats-preview-card {
-					flex-direction: column-reverse;
-					.stats-preview-card {
-						flex-direction: column-reverse;
-						max-width: 50%;
-
-						.stats-content {
-							width: 100%;
-							text-align: center;
-							border-radius: 0rem 0rem 1rem 1rem;
-							.description {
-								line-height: 1.5em;
-							}
-							.stats-number {
-								flex-direction: column;
-								.stat {
-									margin: 1rem 0rem;
-								}
-							}
+				.stats-content {
+					width: 100%;
+					text-align: center;
+					border-radius: 0rem 0rem 1rem 1rem;
+					.description {
+						line-height: 1.5em;
+					}
+					.stats-number {
+						flex-direction: column;
+						.stat {
+							margin: 1rem 0rem;
 						}
-						.image {
-							width: 100%;
-							border-radius: 1rem 1rem 0rem 0rem;
-							img {
-								border-radius: 1rem 1rem 0rem 0rem;
-								display: block;
-							}
-						}
+					}
+				}
+				.image {
+					width: 100%;
+					border-radius: 1rem 1rem 0rem 0rem;
+					img {
+						border-radius: 1rem 1rem 0rem 0rem;
+						display: block;
 					}
 				}
 			}

@@ -74,27 +74,22 @@ main {
   html main .stats-preview-card {
     flex-direction: column-reverse;
     max-width: 50%; }
-    html main .stats-preview-card .stats-preview-card {
-      flex-direction: column-reverse; }
-      html main .stats-preview-card .stats-preview-card .stats-preview-card {
-        flex-direction: column-reverse;
-        max-width: 50%; }
-        html main .stats-preview-card .stats-preview-card .stats-preview-card .stats-content {
-          width: 100%;
-          text-align: center;
-          border-radius: 0rem 0rem 1rem 1rem; }
-          html main .stats-preview-card .stats-preview-card .stats-preview-card .stats-content .description {
-            line-height: 1.5em; }
-          html main .stats-preview-card .stats-preview-card .stats-preview-card .stats-content .stats-number {
-            flex-direction: column; }
-            html main .stats-preview-card .stats-preview-card .stats-preview-card .stats-content .stats-number .stat {
-              margin: 1rem 0rem; }
-        html main .stats-preview-card .stats-preview-card .stats-preview-card .image {
-          width: 100%;
-          border-radius: 1rem 1rem 0rem 0rem; }
-          html main .stats-preview-card .stats-preview-card .stats-preview-card .image img {
-            border-radius: 1rem 1rem 0rem 0rem;
-            display: block; } }
+    html main .stats-preview-card .stats-content {
+      width: 100%;
+      text-align: center;
+      border-radius: 0rem 0rem 1rem 1rem; }
+      html main .stats-preview-card .stats-content .description {
+        line-height: 1.5em; }
+      html main .stats-preview-card .stats-content .stats-number {
+        flex-direction: column; }
+        html main .stats-preview-card .stats-content .stats-number .stat {
+          margin: 1rem 0rem; }
+    html main .stats-preview-card .image {
+      width: 100%;
+      border-radius: 1rem 1rem 0rem 0rem; }
+      html main .stats-preview-card .image img {
+        border-radius: 1rem 1rem 0rem 0rem;
+        display: block; } }
 @media screen and (max-width: 768px) {
   html {
     font-size: 80%; }
