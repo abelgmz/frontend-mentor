@@ -1,15 +1,15 @@
 /*
 Error: Invalid CSS after "}": expected "}", was ""
-        on line 216 of styles.scss
+        on line 228 of styles.scss
 
-211: 				}
-212: 			}
-213: 		}
-214: 	}
-215: }
+223: 				}
+224: 			}
+225: 		}
+226: 	}
+227: }
 
 Backtrace:
-styles.scss:216
+styles.scss:228
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
@@ -46,4 +46,4 @@ C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 216 of styles.scss\A \A 211: 				}\A 212: 			}\A 213: 		}\A 214: 	}\A 215: }"; }
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 228 of styles.scss\A \A 223: 				}\A 224: 			}\A 225: 		}\A 226: 	}\A 227: }"; }
