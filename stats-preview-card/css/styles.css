@@ -1,19 +1,23 @@
 /*
 Error: Invalid CSS after "}": expected "}", was ""
-        on line 198 of styles.scss
+        on line 216 of styles.scss
 
-193: 				}
-194: 			}
-195: 		}
-196: 	}
-197: }
+211: 				}
+212: 			}
+213: 		}
+214: 	}
+215: }
 
 Backtrace:
-styles.scss:198
+styles.scss:216
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
 C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
@@ -42,4 +46,4 @@ C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 198 of styles.scss\A \A 193: 				}\A 194: 			}\A 195: 		}\A 196: 	}\A 197: }"; }
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 216 of styles.scss\A \A 211: 				}\A 212: 			}\A 213: 		}\A 214: 	}\A 215: }"; }
