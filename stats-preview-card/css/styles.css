@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"); }
 @font-face {
-  font-family: 'Lexend-Deca';
+  font-family: "Lexend-Deca";
   src: url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
   font-weight: 400; }
 * {
@@ -57,7 +57,7 @@ main {
       main .stats-preview-card .image img {
         width: 100%;
         border-radius: 0rem 1rem 1rem 0rem;
-        opacity: .6;
+        opacity: 0.6;
         height: 100%; }
 
 @media screen and (max-width: 1600px) {
@@ -70,24 +70,25 @@ main {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 80%; } }
-@media screen and (max-width: 992px) {
-  html {
-    font-size: 100%; }
-    html main {
-      min-height: 100vh; }
-      html main .stats-preview-card {
-        flex-direction: column-reverse; }
-        html main .stats-preview-card .stats-content {
-          width: 100%;
-          text-align: center; }
-          html main .stats-preview-card .stats-content .description {
-            line-height: 1.5em; }
-          html main .stats-preview-card .stats-content .stats-number {
-            flex-direction: column; }
-            html main .stats-preview-card .stats-content .stats-number .stat {
-              margin: 1rem 0rem; }
-        html main .stats-preview-card .image {
-          width: 100%; } }
+@media screen and (max-width: 1030px) {
+  html main .stats-preview-card {
+    flex-direction: column-reverse; }
+    html main .stats-preview-card .stats-content {
+      width: 100%;
+      text-align: center;
+      border-radius: 0rem 0rem 1rem 1rem; }
+      html main .stats-preview-card .stats-content .description {
+        line-height: 1.5em; }
+      html main .stats-preview-card .stats-content .stats-number {
+        flex-direction: column; }
+        html main .stats-preview-card .stats-content .stats-number .stat {
+          margin: 1rem 0rem; }
+    html main .stats-preview-card .image {
+      width: 100%;
+      border-radius: 1rem 1rem 0rem 0rem; }
+      html main .stats-preview-card .image img {
+        border-radius: 1rem 1rem 0rem 0rem;
+        display: block; } }
 @media screen and (max-width: 768px) {
   html {
     font-size: 80%; }
@@ -96,7 +97,7 @@ main {
       html main .stats-preview-card .stats-content .description {
         margin: 1rem 0rem; }
       html main .stats-preview-card .stats-content .stats-number .stat {
-        margin: .8rem 0rem; } }
+        margin: 0.8rem 0rem; } }
 @media screen and (max-width: 576px) {
   html {
     font-size: 50%; }
