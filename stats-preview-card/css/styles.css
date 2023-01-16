@@ -72,7 +72,8 @@ main {
     font-size: 80%; } }
 @media screen and (max-width: 1030px) {
   html main .stats-preview-card {
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    max-width: 50%; }
     html main .stats-preview-card .stats-content {
       width: 100%;
       text-align: center;

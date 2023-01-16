@@ -125,6 +125,7 @@ main {
 			// min-height: 100vh;
 			.stats-preview-card {
 				flex-direction: column-reverse;
+				max-width: 50%;
 				.stats-content {
 					width: 100%;
 					text-align: center;
