@@ -122,9 +122,15 @@ main {
 	html {
 		// font-size: 100%;
 		main {
+<<<<<<< HEAD
 			// min-height: 100vh;
 			.stats-preview-card {
 				flex-direction: column-reverse;
+=======
+			.stats-preview-card {
+				flex-direction: column-reverse;
+				max-width: 50%;
+>>>>>>> gh-pages
 				.stats-content {
 					width: 100%;
 					text-align: center;
