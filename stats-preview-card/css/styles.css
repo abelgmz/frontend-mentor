@@ -53,7 +53,8 @@ main {
           text-transform: uppercase; }
     main .stats-preview-card .image {
       width: 50%;
-      background-color: #aa5cdb; }
+      background-color: #aa5cdb;
+      border-radius: 0rem 1rem 1rem 0rem; }
       main .stats-preview-card .image img {
         width: 100%;
         border-radius: 0rem 1rem 1rem 0rem;
@@ -64,7 +65,7 @@ main {
   html {
     font-size: 90%; }
     html .stats-preview-card .stats-content {
-      padding: 2rem 4rem 2rem 2.5rem; }
+      padding: 4rem 4rem 2rem 2.5rem; }
       html .stats-preview-card .stats-content .description {
         margin: 1rem 0rem 2.5rem 0rem; } }
 @media screen and (max-width: 1200px) {
@@ -76,10 +77,13 @@ main {
     html main {
       min-height: 100vh; }
       html main .stats-preview-card {
-        flex-direction: column-reverse; }
+        flex-direction: column-reverse;
+        margin: 3rem 0rem; }
         html main .stats-preview-card .stats-content {
           width: 100%;
-          text-align: center; }
+          text-align: center;
+          border-radius: 0rem 0rem 1rem 1rem;
+          padding: 4rem 3rem 2rem 3rem; }
           html main .stats-preview-card .stats-content .description {
             line-height: 1.5em; }
           html main .stats-preview-card .stats-content .stats-number {
@@ -87,7 +91,11 @@ main {
             html main .stats-preview-card .stats-content .stats-number .stat {
               margin: 1rem 0rem; }
         html main .stats-preview-card .image {
-          width: 100%; } }
+          width: 100%;
+          border-radius: 1rem 1rem 0rem 0rem; }
+          html main .stats-preview-card .image img {
+            display: block;
+            border-radius: 1rem 1rem 0rem 0rem; } }
 @media screen and (max-width: 768px) {
   html {
     font-size: 80%; }

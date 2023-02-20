@@ -88,6 +88,7 @@ main {
         .image {
             width: 50%;
             background-color: $clr-soft-violet;
+            border-radius: 0rem 1rem 1rem 0rem;
             img {
                 width: 100%;
                 border-radius: 0rem 1rem 1rem 0rem;
@@ -103,7 +104,7 @@ main {
         font-size: 90%;
         .stats-preview-card {
             .stats-content {
-                padding: 2rem 4rem 2rem 2.5rem;
+                padding: 4rem 4rem 2rem 2.5rem;
                 .description {
                     margin: 1rem 0rem 2.5rem 0rem;
                 }
@@ -125,9 +126,12 @@ main {
             min-height: 100vh;
             .stats-preview-card {
                 flex-direction: column-reverse;
+                margin: 3rem 0rem;
                 .stats-content {
                     width: 100%;
                     text-align: center;
+                    border-radius: 0rem 0rem 1rem 1rem;
+                    padding: 4rem 3rem 2rem 3rem;
                     .description {
                         line-height: 1.5em;
                     }
@@ -140,6 +144,11 @@ main {
                 }
                 .image {
                     width: 100%;
+                    border-radius: 1rem 1rem 0rem 0rem;
+                    img {
+                        display: block;
+                        border-radius: 1rem 1rem 0rem 0rem;
+                    }
                 }
             }
         }
