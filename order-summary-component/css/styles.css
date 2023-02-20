@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+  font-style: normal;
+  font-weight: 500; }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Red Hat Display"; }
+
+body {
+  font-size: 100%; }
+
+main, main .order-summary .summary .plan, main .order-summary .summary .buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+main {
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff; }
+  main .order-summary {
+    max-width: 25%;
+    min-width: 450px;
+    max-width: 450px;
+    max-height: 700px; }
+    main .order-summary .image {
+      width: 100%; }
+      main .order-summary .image img {
+        width: 100%;
+        border-radius: 1rem 1rem 0rem 0rem;
+        display: block; }
+    main .order-summary .summary {
+      width: 100%;
+      background-color: #ffffff;
+      text-align: center;
+      padding: 1rem 2rem;
+      border-radius: 0rem 0rem 1rem 1rem; }
+      main .order-summary .summary h2 {
+        padding: 1rem;
+        font-weight: 900; }
+      main .order-summary .summary .description {
+        color: #7280a7;
+        padding: 0.5rem 1rem; }
+      main .order-summary .summary .plan {
+        flex-direction: row;
+        margin: 1rem auto 0rem auto;
+        align-items: center;
+        width: 90%;
+        padding: 1rem;
+        background-color: #f5f7ff;
+        border-radius: 1rem; }
+        main .order-summary .summary .plan .plan-period {
+          margin-left: 2rem; }
+          main .order-summary .summary .plan .plan-period .period {
+            font-weight: 900; }
+        main .order-summary .summary .plan .change-period {
+          margin-left: 5rem; }
+          main .order-summary .summary .plan .change-period a {
+            cursor: pointer;
+            color: #3829e0; }
+            main .order-summary .summary .plan .change-period a:active {
+              text-decoration: none;
+              color: #766cf1; }
+      main .order-summary .summary .buttons {
+        flex-direction: column;
+        width: 90%;
+        margin: 1rem auto; }
+        main .order-summary .summary .buttons .button {
+          background-color: #3829e0;
+          box-shadow: 0rem 1.5em 0.6rem #e0e8ff;
+          color: #ffffff;
+          border-radius: 0.5rem;
+          font-weight: 700;
+          padding: 0.8rem;
+          border: 1px solid #3829e0;
+          outline: none;
+          cursor: pointer; }
+          main .order-summary .summary .buttons .button:active {
+            background-color: #766cf1; }
+        main .order-summary .summary .buttons a {
+          text-decoration: none;
+          color: #7280a7;
+          margin-top: 2rem;
+          width: auto;
+          cursor: pointer;
+          font-weight: 700; }
+
+/*# sourceMappingURL=styles.css.map */
